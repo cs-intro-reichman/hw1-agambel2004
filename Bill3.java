@@ -7,10 +7,10 @@ public class Bill3 {
 		String name3 = args[2];
 		String bill = args[3];
 
-		double pay = Double.parseDouble(bill)/3.0;
+		double pay = Double.parseDouble(bill) / 3.0;
 		pay = Math.ceil(pay);
 
-		System.out.println("dear " + name3 + ", " + name2 + ", and " +
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " +
 		name1 + ": pay " + pay + " Shekels each");
 	}
 }

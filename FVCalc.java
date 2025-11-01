@@ -6,12 +6,13 @@ public class FVCalc {
 		String time = args[2];
 
 		int currentValue = Integer.parseInt(principal);
-		double rate = Double.parseDouble(insertRate)/100;
+		double rate = Double.parseDouble(insertRate) ;
+		double rate2 = rate / 100;
 		int year = Integer.parseInt(time);
 
-		double futureValue = currentValue * Math.pow(rate + 1, year);
-		
-		System.out.println("after " + year + ", $" + currentValue + 
-		" saved at " + insertRate + "% will yield $" +(int)futureValue);
+		double futureValue = currentValue * Math.pow(rate2 + 1, year);
+
+		System.out.print("After " + year + " years, $" + currentValue + 
+		" saved at " + rate + "% will yield $" +(int)futureValue);
 	}
 }
